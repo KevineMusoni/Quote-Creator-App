@@ -1,3 +1,12 @@
-<p>
-  writers works!
-</p>
+<h1>Writers</h1>
+
+<ul>
+  <li *ngFor="let writer of writers$">
+    <a routerLink="/details/{{writer.id}}">{{ writer.name }}</a>
+
+    <ul>
+      <li>{{ writer.email }}</li>
+      <li><a href="http://{{ writer.website }}">{{ writer.website }}</a></li>
+    </ul>
+  </li>
+</ul>
