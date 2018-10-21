@@ -1,15 +1,30 @@
-<nav>
-    <ul>
-      <li>
-        <a routerLink="">
-            <i class="material-icons md-18">face</i>
-        </a>
-      </li>
-      <li>
-          <a routerLink="posts">
-              <i class="material-icons">
-                  subject</i>
-          </a>
-        </li>
-    </ul>
-  </nav>
+<div class="all-content">
+        <nav>
+                <ul>
+                  <li>
+                    <a routerLink="profile-form">
+                        <i class="material-icons md-18">face</i>
+                    </a>
+                  </li>
+                  <li>
+                      <a routerLink="posts">
+                          <i class="material-icons">
+                              subject</i>
+                      </a>
+                    </li>
+                </ul>
+              </nav>
+              <h1 id="heading">Welcome to Quote-Creator App!</h1>
+              <p class="prg">"Create your own quote & share it with friends..."</p>
+              <form>
+                    <div class="form-group">
+                            <label for="name">Name</label>
+                            <input id="name" type="text" class="form-control">
+                    </div>
+                  <div class="form-group">
+                <label for="quote"></label>
+                <textarea id="quote" cols="30" rows="10" class="form-control" >Quote</textarea>
+                  </div>
+                  <button class="btn btn-primary">create</button>
+                </form>
+</div>
