@@ -12,8 +12,9 @@ github link : https://github.com/KevineMusoni/Quote-Creator-App.git
 ## Behavior Driven Development
 | input           |    output            |
 |---------------  |--------------------  |
-| create quote    |  view uploaded quotes|
-| click delete    |  quote removed       | 
+| create quote    |  quote is uploaded   |
+| click quotes    |  view uploaded quotes|
+| click delete    |  quote is removed    | 
 
 ## Technologies Used
 {Angular6, HTML, SCSS, TS}
