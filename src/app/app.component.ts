@@ -8,3 +8,12 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'quote';
 }
+
+// tslint:disable-next-line:class-name
+export class quote {
+  public showSidebar: boolean;
+  // tslint:disable-next-line:no-shadowed-variable
+  constructor(public name: string, public authorname: string, public quote: string ) {
+      this.showSidebar = false;
+  }
+}
