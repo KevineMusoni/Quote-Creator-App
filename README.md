@@ -16,7 +16,7 @@ github link : https://github.com/KevineMusoni/Quote-Creator-App.git
 | click delete    |  quote removed       | 
 
 ## Technologies Used
-{Angular6, HTML, SCSS}
+{Angular6, HTML, SCSS, TS}
 ## Support and contact details
 {Run the web page once again incase of any errors / send an email: kevinenicky@gmail.com}
 Copyright (c) {2018} **{Kevine Musoni}**
