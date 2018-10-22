@@ -2,10 +2,11 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { QuotesComponent } from './quotes/quotes.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
+import {LikeComponent} from './like.component';
 const routes: Routes = [
   {
     path: 'quotes',
-    component: QuotesComponent
+    component: LikeComponent
   },
   {
     path: 'sidebar',

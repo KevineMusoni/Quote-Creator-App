@@ -19,10 +19,10 @@
               <h1 id="heading">Welcome to Quote-Creator App!</h1>
               <p class="prg">"Create your own quote & share it with friends..."</p>
               <form>
-                    <div *ngFor='let sidebar of sidebars;let i =index' class="form-group">
+                    <div class="form-group">
                             <label for="name">Name</label>
                             <input required id="name" type="text" class="form-control">
-                            <button  (click)='toogleDetails(i)'>Toogle Details</button>
+                            <!-- <button  (click)='toogleDetails(i)'>Toogle Details</button> -->
                     </div>
                     <div class="form-group">
                       <label for="authorName">Author</label>
