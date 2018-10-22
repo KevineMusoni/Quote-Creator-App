@@ -15,6 +15,7 @@ github link : https://github.com/KevineMusoni/Quote-Creator-App.git
 | create quote    |  quote is uploaded   |
 | click quotes    |  view uploaded quotes|
 | click delete    |  quote is removed    | 
+| click on like/dislike buttons|upvotes/downvotes quotes|
 
 ## Technologies Used
 {Angular6, HTML, SCSS, TS}
