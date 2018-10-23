@@ -1,19 +1,16 @@
 import { Component } from '@angular/core';
+import { Sidebar } from './sidebar';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
+
 export class AppComponent {
-  title = 'quote';
+  goals = [
+    new Sidebar(1, 'It Doesn’t Matter Where You Came From. All That Matters Is Where You Are Going', 'author:', 'BrianTracy'),
+    new Sidebar(2, 'Think Big...Life’s Too Short To Think Small', 'author:', 'Tim Ferriss'),
+  ];
 }
 
-// tslint:disable-next-line:class-name
-export class quote {
-  public showSidebar: boolean;
-  // tslint:disable-next-line:no-shadowed-variable
-  constructor(public name: string, public authorname: string, public quote: string ) {
-      this.showSidebar = false;
-  }
-}

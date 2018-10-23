@@ -5,7 +5,7 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import {LikeComponent} from './like.component';
 const routes: Routes = [
   {
-    path: 'quotes',
+    path: 'like',
     component: LikeComponent
   },
   {
