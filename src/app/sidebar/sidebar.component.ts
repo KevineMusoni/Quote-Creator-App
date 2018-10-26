@@ -9,8 +9,8 @@ import { Sidebar } from '../sidebar';
 export class SidebarComponent implements OnInit {
 
   sidebars = [
-    new Sidebar(1, 'It Doesn’t Matter Where You Came From. All That Matters Is Where You Are Going', 'author:', 'BrianTracy'),
-    new Sidebar(2, 'Think Big...Life’s Too Short To Think Small', 'author:', 'Tim Ferriss'),
+    new Sidebar(1, 'It Doesn’t Matter Where You Came From. All That Matters Is Where You Are Going', 'BrianTracy'),
+    new Sidebar(2, 'Think Big...Life’s Too Short To Think Small', 'Tim Ferriss'),
   ];
   AddSidebar(isComplete, index) {
     if (isComplete) {

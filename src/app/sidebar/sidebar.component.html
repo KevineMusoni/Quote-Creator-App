@@ -1,50 +1,55 @@
 <div class="all-content">
-        <nav>
-                <ul>
-                  <li>
-                    <a routerLink="/sidebar" routerLinkActive="active">
-                        <i class="material-icons md-18">face</i>
-                        <p>create</p>
-                    </a>
-                  </li>
-                  <li>
-                      <a routerLink="/quotes" routerLinkActive="active">
-                          <i class="material-icons">
-                              subject</i>
-                              <p>quotes</p>
-                      </a>
-                    </li>
-                </ul>
-              </nav>
-              <h1 id="heading">Welcome to Quote-Creator App!</h1>
-              <p class="prg">"Create your own quote & share it with friends..."</p>
-              <!-- directives -->
-              <ul>
-                <div *ngFor='let sidebar of sidebars;let i = index'>
-                  <li>{{sidebar.name}}</li>
-                  <button (click)='toogleDetails(i)'>details</button>
-              
-                  <app-sidebar-details *ngIf="sidebar.showauthorName" [sidebar]='sidebar'></app-sidebar-details>
-                </div>
-              </ul>
-              <p *ngIf='sidebars.length > 10'>Oops!, you can't add more quotes</p>
-                <!-- user form -->
-              <form>
-                    <div class="form-group">
-                            <label for="name">Name</label>
-                            <input required id="name" type="text" class="form-control">
-                            <!-- <button  (click)='toogleDetails(i)'>Toogle Details</button> -->
-                    </div>
-                    <div class="form-group">
-                      <label for="authorName">Author</label>
-                      <input required id="authorname" type="text" class="form-control">
-              </div>
-                  <div class="form-group">
-                <label for="quote">Quote</label>
-                <textarea required id="quote" cols="30" rows="10" class="form-control" ></textarea>
-                  </div>
-                  
-                  <button class="btn btn-primary">create</button>
-                  
-                </form>
+  <nav>
+    <ul>
+      <li>
+        <a routerLink="/sidebar" routerLinkActive="active">
+          <i class="material-icons md-18">face</i>
+          <p>create</p>
+        </a>
+      </li>
+      <li>
+        <a routerLink="/quotes" routerLinkActive="active">
+          <i class="material-icons">
+            subject</i>
+          <p>quotes</p>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+
+
+  <h1 id="heading">Welcome to Quote-Creator App!</h1>
+  <p class="prg">"Create your own quote & share it with friends..."</p>
+  <!-- directives -->
+  <ul>
+    <div *ngFor='let sidebar of sidebars;let i = index'>
+      <li>{{sidebar.name}}</li>
+      <button (click)='toogleDetails(i)'>details</button>
+      <!-- <app-sidebar-details *ngIf="sidebar.showauthorName" [sidebar]='sidebar'>
+      </app-sidebar-details> -->
+    </div>
+  </ul>
+  <p *ngIf='sidebars.length > 10'>Oops!, you can't add more quotes</p>
+  <!-- user form -->
+
+
+  <form>
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input required id="name" type="text" class="form-control">
+      <!-- <button  (click)='toogleDetails(i)'>Toogle Details</button> -->
+    </div>
+    <div class="form-group">
+      <label for="authorName">Author</label>
+      <input required id="authorname" type="text" class="form-control">
+    </div>
+    <div class="form-group">
+      <label for="quote">Quote</label>
+      <textarea required id="quote" cols="30" rows="10" class="form-control"></textarea>
+    </div>
+
+    <button class="btn btn-primary">create</button>
+
+  </form>
 </div>

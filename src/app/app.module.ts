@@ -1,23 +1,26 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import { AppRoutingModule, routingComponents } from './app-routing.module';
+import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 import { LikeComponent } from './like.component';
-import { SidebarDetailsComponent } from './sidebar-details/sidebar-details.component';
 import { StrikethroughDirective } from './strikethrough.directive';
+import { SidebarComponent } from './sidebar/sidebar.component';
 
+const routes: Routes = [
+  { path: 'sidebar', component: SidebarComponent },
+  { path: 'like', component: LikeComponent }
+];
 @NgModule({
   declarations: [
     AppComponent,
-    routingComponents,
     LikeComponent,
-    SidebarDetailsComponent,
+    SidebarComponent,
     StrikethroughDirective
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    RouterModule.forRoot(routes)
   ],
   providers: [],
   bootstrap: [AppComponent]

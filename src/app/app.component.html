@@ -1,13 +1,13 @@
-<div id="container">
+<!-- <div id="container"> -->
   <app-sidebar></app-sidebar>
   <div id="content">
   </div>
-</div>
+<!-- </div> -->
 <!-- router view goes here -->
 <router-outlet>
       
   </router-outlet>
   <ul>
-    <li *ngFor='let sidebar of sidebars'>{{sidebar}}</li>
+    <li *ngFor='let quotes of sidebars'>{{sidebar}}</li>
   </ul>
-  <p *ngIf='sidebars.length > 10'>Oops!, you can't add more quotes</p>
+  <p *ngIf='quotes0.length > 10'>Oops!, you can't add more quotes</p>
